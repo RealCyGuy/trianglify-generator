@@ -78,6 +78,7 @@ label {
 .container {
   display: flex;
   justify-content: center;
+  overflow: visible;
 }
 
 a {
