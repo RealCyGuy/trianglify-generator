@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trianglify Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Trianglify Generator</h1>
+        <p>A free generator for <a href="https://trianglify.io">trianglify.js</a> made by Cyrus. Source on <a
+                href="https://github.com/realcyguy/trianglify-generator">github</a>.</p>
+    </header>
+    <form id="form">
+        <div class="form-top">
+            <div>
+                <label for="width">Width</label>
+                <input id="width" type="number" name="width" value="600" step="100">
+            </div>
+            <div>
+                <label for="height">Height</label>
+                <input id="height" type="number" name="height" value="400" step="100">
+            </div>
+            <div>
+                <label for="cell">Cell Size</label>
+                <input id="cell" type="number" name="cell" value="75" step="10">
+            </div>
+        </div>
+        <hr>
+        <div class="colourbuttons">
+            <button id="addcolour">Add colour</button>
+            <button id="removeallcolour">Remove all colours</button>
+        </div>
+        <div class="colours">
+            <div class='colourinput'>
+                <input type='color' class='colour' value='#e52165'>
+                <button class='x'>x</button>
+            </div>
+            <div class='colourinput'>
+                <input type='color' class='colour' value='#0d1137'>
+                <button class='x'>x</button>
+            </div>
+        </div>
+    </form>
+    <div class="container">
+        <canvas></canvas>
+    </div>
+    <footer>made with <span class="heart">heart emoji</span> by <a href="https://realcyguy.github.io">cyrus</a></footer>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
