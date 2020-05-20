@@ -1,3 +1,13 @@
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
 function generate() {
   var colours = [];
   $(".colour").each(function () {
@@ -7,7 +17,7 @@ function generate() {
     width: parseInt($("#width").val()),
     height: parseInt($("#height").val()),
     cell_size: parseInt($("#cell").val()),
-    x_colors: colours
+    x_colors: shuffle(colours)
   });
   $("canvas").last().replaceWith(pattern.canvas());
 }
