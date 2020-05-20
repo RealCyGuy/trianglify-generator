@@ -19,8 +19,8 @@ body {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   background: #fa7c59;
   width: 100%;
   text-align: center;
@@ -37,7 +37,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.colourbuttons {
+.buttons {
   text-align: center;
 }
 
@@ -60,13 +60,13 @@ form > input {
   background: #fff;
 }
 
-.colourbuttons > button {
+.buttons > button {
   color: #fda085;
   background: #fff;
   cursor: pointer;
 }
 
-.colourbuttons > button:hover {
+.buttons > button:hover {
   background: #fda085;
   color: #fff;
 }
@@ -75,10 +75,11 @@ label {
   padding: 5px;
 }
 
-.container {
+.canvas-contain {
   display: flex;
   justify-content: center;
   overflow: visible;
+  margin-bottom: 5px;
 }
 
 a {
@@ -92,4 +93,28 @@ header {
 
 hr {
   margin: 5px;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.download p {
+  padding: 5px;
+}
+
+.download-links a {
+  background-color: #fc8e70;
+  border-radius: 40px;
+  padding: 5px;
+  font-size: x-large;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+
+.download-links a:hover {
+  background-color: #eb8366;
 }

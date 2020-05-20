@@ -1,3 +1,4 @@
+var s = new XMLSerializer
 function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
@@ -20,6 +21,8 @@ function generate() {
     x_colors: shuffle(colours)
   });
   $("canvas").last().replaceWith(pattern.canvas());
+  $(".download-links").replaceWith("<div class='download-links'><a href='data:image/svg+xml;utf-8," + s.serializeToString(pattern.svg()) + "' download='triangles'>svg</a><a href='" + pattern.png() + "' download='triangles'>png</a></div>");
+  console.log(s.serializeToString(pattern.svg()));
 }
 
 $(function () {
@@ -44,6 +47,10 @@ $(function () {
   $(".x").click(function (e) {
     e.preventDefault();
     $(this).parent().remove();
+    generate();
+  });
+  $("#regenerate").click(function(e){
+    e.preventDefault();
     generate();
   });
 });
