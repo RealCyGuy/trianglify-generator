@@ -35,6 +35,7 @@ footer {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  min-height: 10px;
 }
 
 .buttons {
@@ -53,9 +54,8 @@ form {
   flex-wrap: wrap;
 }
 
-form > input {
-  padding: 0.5rem;
-  font-size: 2rem;
+.form-top input {
+  padding: 2px;
   border: none;
   background: #fff;
 }
