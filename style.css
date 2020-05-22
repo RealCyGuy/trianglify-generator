@@ -83,13 +83,6 @@ label {
   padding: 5px;
 }
 
-.canvas-contain {
-  display: flex;
-  justify-content: center;
-  overflow: visible;
-  margin-bottom: 5px;
-}
-
 canvas {
   margin: auto;
   display: block;
