@@ -50,14 +50,16 @@ form {
 .form-top {
   display: flex;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  text-align: right;
 }
 
 .form-top input {
   padding: 2px;
   border: none;
   background: #fff;
+  width: 200px;
 }
 
 .buttons > button {
@@ -80,6 +82,11 @@ label {
   justify-content: center;
   overflow: visible;
   margin-bottom: 5px;
+}
+
+canvas {
+  margin: auto;
+  display: block;
 }
 
 a {
@@ -117,4 +124,43 @@ hr {
 
 .download-links a:hover {
   background-color: #eb8366;
+}
+
+@media only screen and (max-width: 1000px) {
+  canvas {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  canvas {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  canvas {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  canvas {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  canvas {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  canvas {
+    max-width: 300px;
+  }
+  .form-top div, .form-top input {
+    width: 100%;
+  }
 }

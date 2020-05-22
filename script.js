@@ -79,7 +79,9 @@ $(function () {
   });
   $("#importcolour").click(function (e) {
     e.preventDefault();
-    inputcolours = prompt("Paste colours seperated by commas. Ex: \"#cc2e5a,#9dead8\"").split(",");
+    inputcolours = prompt(
+      'Paste colours seperated by commas. Ex: "#cc2e5a,#9dead8"'
+    ).split(",");
     $(".colours").empty();
     inputcolours.forEach((colour) =>
       $(".colours").append(
