@@ -37,10 +37,6 @@ footer {
   min-height: 10px;
 }
 
-.buttons {
-  text-align: center;
-}
-
 form {
   width: 90%;
   margin: auto;
@@ -62,16 +58,22 @@ form {
   border-bottom: 2px solid transparent;
 }
 
-.form-top input:focus, .form-top input:active {
+.form-top input:focus,
+.form-top input:active {
   outline: none;
   border-bottom: 2px solid #1c87c9;
+}
+
+.buttons {
+  text-align: center;
 }
 
 .buttons > button {
   color: #fda085;
   background: #fff;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
+  margin: 3px;
 }
 
 .buttons > button:hover {
@@ -80,7 +82,7 @@ form {
 }
 
 .buttons > button:focus {
-  border: 2px solid black;
+  border: 1px solid black;
   outline: none;
 }
 
@@ -108,7 +110,12 @@ header {
 
 hr {
   margin: 5px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
   border: 0px;
   height: 1px;
 }
@@ -134,18 +141,23 @@ hr {
   outline: none;
 }
 
-.download-links a:hover, .download-links a:focus {
+.download-links a:hover,
+.download-links a:focus {
   background-color: #eb8366;
 }
 
-.colourinput input, .colourinput button {
+.colourinput input,
+.colourinput button {
   cursor: pointer;
   border: 1px solid black;
   padding: 2px 3px;
   background-color: white;
 }
 
-.colourinput input:focus, .colourinput button:focus, .colourinput input:hover, .colourinput button:hover {
+.colourinput input:focus,
+.colourinput button:focus,
+.colourinput input:hover,
+.colourinput button:hover {
   background-color: rgb(255, 208, 208);
   outline: none;
 }
@@ -195,7 +207,8 @@ hr {
   canvas {
     max-width: 300px;
   }
-  .form-top div, .form-top input {
+  .form-top div,
+  .form-top input {
     width: 100%;
   }
 }
