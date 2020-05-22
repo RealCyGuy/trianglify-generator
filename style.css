@@ -19,8 +19,6 @@ body {
 }
 
 footer {
-  /* position: absolute;
-  bottom: 0; */
   background: #fa7c59;
   width: 100%;
   text-align: center;
@@ -29,6 +27,7 @@ footer {
 
 .heart {
   color: red;
+  font-weight: bold;
 }
 
 .colours {
