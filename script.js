@@ -60,7 +60,7 @@ $(function () {
     $(".colours").append(
       "<div class='colourinput'><input type='color' class='colour' value='#" +
         Math.floor(Math.random() * 16777215).toString(16) +
-        "'><button class='x'>x</button></div>"
+        "'><button class='x'>X</button></div>"
     );
     generate();
     $(".x").click(function (e) {
