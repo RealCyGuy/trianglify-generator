@@ -59,8 +59,7 @@ form {
   background: #fff;
   width: 200px;
   border: none;
-  border-bottom: 2px solid #1c87c9;
-  border-color: transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .form-top input:focus, .form-top input:active {
@@ -72,11 +71,17 @@ form {
   color: #fda085;
   background: #fff;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 
 .buttons > button:hover {
-  background: #fda085;
+  background: transparent;
   color: #fff;
+}
+
+.buttons > button:focus {
+  border: 2px solid black;
+  outline: none;
 }
 
 label {
@@ -90,6 +95,10 @@ canvas {
 
 a {
   color: #252525;
+}
+
+a:focus {
+  outline: solid 2px;
 }
 
 header {
@@ -122,9 +131,10 @@ hr {
   font-size: large;
   margin: 0px 5px;
   text-decoration: none;
+  outline: none;
 }
 
-.download-links a:hover {
+.download-links a:hover, .download-links a:focus {
   background-color: #eb8366;
 }
 
@@ -132,6 +142,11 @@ hr {
   cursor: pointer;
   border: 1px solid black;
   padding: 2px 3px;
+}
+
+.colourinput input:focus, .colourinput button:focus {
+  background-color: wheat;
+  outline: none;
 }
 
 .colourinput input {
