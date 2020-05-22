@@ -46,7 +46,7 @@ $(function () {
     $(".colours").append(
       "<div class='colourinput'><input type='color' class='colour' value='" +
         $(".colour").last().val() +
-        "'><button class='x'>x</button></div>"
+        "'><button class='x'>X</button></div>"
     );
     generate();
     $(".x").click(function (e) {
