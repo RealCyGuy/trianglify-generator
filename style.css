@@ -142,10 +142,11 @@ hr {
   cursor: pointer;
   border: 1px solid black;
   padding: 2px 3px;
+  background-color: white;
 }
 
-.colourinput input:focus, .colourinput button:focus {
-  background-color: wheat;
+.colourinput input:focus, .colourinput button:focus, .colourinput input:hover, .colourinput button:hover {
+  background-color: rgb(255, 208, 208);
   outline: none;
 }
 
@@ -157,6 +158,7 @@ hr {
 .colourinput button {
   border-left: none;
   border-radius: 0 50px 50px 0;
+  padding-right: 5px;
 }
 
 @media only screen and (max-width: 1000px) {
