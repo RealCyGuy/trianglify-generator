@@ -74,6 +74,7 @@ form {
   cursor: pointer;
   border: 1px solid transparent;
   margin: 3px;
+  transition: all 0.4s ease-in-out;
 }
 
 .buttons > button:hover {
@@ -139,6 +140,7 @@ hr {
   margin: 0px 5px;
   text-decoration: none;
   outline: none;
+  transition: background-color 0.5s ease;
 }
 
 .download-links a:hover,
