@@ -75,6 +75,7 @@ form {
   border: 1px solid transparent;
   margin: 3px;
   transition: all 0.4s ease-in-out;
+  padding: 10px;
 }
 
 .buttons > button:hover {
