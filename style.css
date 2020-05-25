@@ -110,6 +110,10 @@ header {
   margin: 5px;
 }
 
+header h1 {
+  font-family: 'News Cycle', sans-serif;
+}
+
 hr {
   margin: 5px;
   background-image: linear-gradient(
