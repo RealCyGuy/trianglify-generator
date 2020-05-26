@@ -80,9 +80,8 @@ $(function () {
   $("#importcolour").click(function (e) {
     e.preventDefault();
     inputcolours = prompt(
-      'Paste colours seperated by commas. Ex: "#cc2e5a,#9dead8"'
+      'Paste colours seperated by commas. Ex: "#cc2e5a,#9dead8" This will add onto the current colours.'
     ).split(",");
-    $(".colours").empty();
     inputcolours.forEach((colour) =>
       $(".colours").append(
         "<div class='colourinput'><input type='color' class='colour' value='#" +
