@@ -79,7 +79,7 @@ form {
 }
 
 .buttons > button:hover {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
