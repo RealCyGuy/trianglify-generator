@@ -111,7 +111,7 @@ header {
 }
 
 header h1 {
-  font-family: 'News Cycle', sans-serif;
+  font-family: "News Cycle", sans-serif;
 }
 
 hr {
@@ -182,6 +182,22 @@ hr {
 
 .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+}
+
+.share a {
+  margin: 1px;
+  padding: 5px;
+  background-color: #ff997d;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background-color: #ff9071;
 }
 
 @keyframes octocat-wave {
