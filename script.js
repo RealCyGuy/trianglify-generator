@@ -35,6 +35,25 @@ function generate() {
 }
 
 $(function () {
+  var clipboard = new ClipboardJS(".copy", {
+    text: function () {
+      return window.location.href;
+    },
+  });
+  clipboard.on("success", function (e) {
+    $(".copy").text("Copied!");
+    setTimeout(function() {
+      $(".copy").text("Copy Link")
+    }, 3000); 
+  });
+
+  clipboard.on("error", function (e) {
+    prompt("Copy this to your clipboard.", window.location.href);
+    $(".copy").text("Copied!");
+    setTimeout(function() {
+      $(".copy").text("Copy Link")
+    }, 3000); 
+  });
   generate();
   $("#form").change(generate);
   $("#regenerate").click(function (e) {
