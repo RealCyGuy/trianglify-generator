@@ -95,6 +95,7 @@ label {
 canvas {
   margin: auto;
   display: block;
+  max-width: 1000px;
 }
 
 a {
