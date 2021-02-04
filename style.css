@@ -187,6 +187,7 @@ hr {
 .share {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .share a {
