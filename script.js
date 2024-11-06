@@ -42,17 +42,17 @@ $(function () {
   });
   clipboard.on("success", function (e) {
     $(".copy").text("Copied!");
-    setTimeout(function() {
-      $(".copy").text("Copy Link")
-    }, 3000); 
+    setTimeout(function () {
+      $(".copy").text("Copy Link");
+    }, 3000);
   });
 
   clipboard.on("error", function (e) {
     prompt("Copy this to your clipboard.", window.location.href);
     $(".copy").text("Copied!");
-    setTimeout(function() {
-      $(".copy").text("Copy Link")
-    }, 3000); 
+    setTimeout(function () {
+      $(".copy").text("Copy Link");
+    }, 3000);
   });
   generate();
   $("#form").change(generate);
