@@ -102,7 +102,9 @@ label {
 canvas {
   margin: auto;
   display: block;
-  max-width: 1000px;
+  max-width: 98%;
+  margin-top: 5px;
+  padding: 5px;
 }
 
 a {
@@ -226,40 +228,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  canvas {
-    max-width: 900px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  canvas {
-    max-width: 800px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  canvas {
-    max-width: 700px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  canvas {
-    max-width: 600px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  canvas {
-    max-width: 500px;
-  }
-}
-
 @media only screen and (max-width: 500px) {
-  canvas {
-    max-width: 300px;
-  }
   .form-top div,
   .form-top input {
     width: 100%;
