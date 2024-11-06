@@ -11,6 +11,13 @@ body {
     rgba(246, 211, 101, 1) 0%,
     rgba(253, 160, 133, 1) 64%
   );
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .colourinput {

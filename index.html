@@ -99,68 +99,71 @@
         ></path>
       </svg>
     </a>
-    <header>
-      <h1>Trianglify Generator</h1>
-      <p>
-        A free generator for
-        <a href="https://trianglify.io">trianglify.js</a> made by Cyrus. Go make
-        low-poly images to be used as wallpapers or backgrounds or whatever!
-        Open source on
-        <a href="https://github.com/realcyguy/trianglify-generator">github</a>.
-      </p>
-    </header>
-    <form id="form">
-      <div class="form-top">
-        <div>
-          <label for="width">Width</label>
-          <input id="width" type="number" name="width" value="600" />
+    <main>
+      <header>
+        <h1>Trianglify Generator</h1>
+        <p>
+          A free generator for
+          <a href="https://trianglify.io">trianglify.js</a> made by Cyrus. Go
+          make low-poly images to be used as wallpapers or backgrounds or
+          whatever! Open source on
+          <a href="https://github.com/realcyguy/trianglify-generator">github</a
+          >.
+        </p>
+      </header>
+      <form id="form">
+        <div class="form-top">
+          <div>
+            <label for="width">Width</label>
+            <input id="width" type="number" name="width" value="600" />
+          </div>
+          <div>
+            <label for="height">Height</label>
+            <input id="height" type="number" name="height" value="400" />
+          </div>
+          <div>
+            <label for="cell">Cell Size</label>
+            <input id="cell" type="number" name="cell" value="75" />
+          </div>
+          <div>
+            <label for="variance">Variance</label>
+            <input
+              id="variance"
+              type="number"
+              name="variance"
+              value="0.75"
+              step="0.01"
+              min="0"
+              max="1"
+            />
+          </div>
         </div>
-        <div>
-          <label for="height">Height</label>
-          <input id="height" type="number" name="height" value="400" />
+        <hr />
+        <div class="buttons">
+          <button id="regenerate">Regenerate</button>
+          <button id="addcolour">Add colour</button>
+          <button id="addrandomcolour">Add random colour</button>
+          <button id="removeallcolour">Remove all colours</button>
+          <button id="exportcolour">Export colours</button>
+          <button id="importcolour">Import colours</button>
         </div>
-        <div>
-          <label for="cell">Cell Size</label>
-          <input id="cell" type="number" name="cell" value="75" />
+        <div class="colours">
+          <div class="colourinput">
+            <input type="color" class="colour" value="#e52165" />
+            <button class="x">X</button>
+          </div>
+          <div class="colourinput">
+            <input type="color" class="colour" value="#93cccc" />
+            <button class="x">X</button>
+          </div>
         </div>
-        <div>
-          <label for="variance">Variance</label>
-          <input
-            id="variance"
-            type="number"
-            name="variance"
-            value="0.75"
-            step="0.01"
-            min="0"
-            max="1"
-          />
-        </div>
+      </form>
+      <canvas></canvas>
+      <div class="download">
+        <p>Download as:</p>
+        <div class="download-links"></div>
       </div>
-      <hr />
-      <div class="buttons">
-        <button id="regenerate">Regenerate</button>
-        <button id="addcolour">Add colour</button>
-        <button id="addrandomcolour">Add random colour</button>
-        <button id="removeallcolour">Remove all colours</button>
-        <button id="exportcolour">Export colours</button>
-        <button id="importcolour">Import colours</button>
-      </div>
-      <div class="colours">
-        <div class="colourinput">
-          <input type="color" class="colour" value="#e52165" />
-          <button class="x">X</button>
-        </div>
-        <div class="colourinput">
-          <input type="color" class="colour" value="#93cccc" />
-          <button class="x">X</button>
-        </div>
-      </div>
-    </form>
-    <canvas></canvas>
-    <div class="download">
-      <p>Download as:</p>
-      <div class="download-links"></div>
-    </div>
+    </main>
     <footer>
       <p>
         made with <span class="heart">heart emoji</span> by
