@@ -163,12 +163,19 @@ hr {
   background-color: #eb8366;
 }
 
+.colourinput {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
 .colourinput input,
 .colourinput button {
   cursor: pointer;
-  border: 1px solid black;
-  padding: 2px 3px;
-  background-color: white;
+  border: none;
 }
 
 .colourinput input:focus,
@@ -180,14 +187,14 @@ hr {
 }
 
 .colourinput input {
-  border-right: none;
-  border-radius: 50px 0 0 50px;
+  padding-left: 10px;
+  width: 60px;
+  height: 30px;
 }
 
 .colourinput button {
-  border-left: none;
-  border-radius: 0 50px 50px 0;
-  padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 
 .github-corner:hover .octo-arm {
