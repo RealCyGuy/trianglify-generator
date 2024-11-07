@@ -97,6 +97,7 @@ $(function () {
   $("#removeallcolour").click(function (e) {
     e.preventDefault();
     $(".colours").empty();
+    generate();
   });
   $("#exportcolour").click(function (e) {
     e.preventDefault();
