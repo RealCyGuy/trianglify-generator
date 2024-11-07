@@ -17,12 +17,18 @@ function shuffle(a) {
   return a;
 }
 function generate() {
+  x_colors = shuffle(getcolours());
+  if (x_colors.length == 0) {
+    x_colors = "random";
+  } else if (x_colors.length == 1) {
+    x_colors.push(x_colors[0]);
+  }
   var pattern = Trianglify({
     width: parseInt($("#width").val()),
     height: parseInt($("#height").val()),
     cell_size: parseInt($("#cell").val()),
     variance: parseFloat($("#variance").val()),
-    x_colors: shuffle(getcolours()),
+    x_colors: x_colors,
   });
   $("canvas").last().replaceWith(pattern.canvas());
   $(".download-links").replaceWith(
